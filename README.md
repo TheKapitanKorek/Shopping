@@ -2,7 +2,7 @@
 
 This is a simple application emulating a shopping list functionality.
 
-[check the app here](https://thekapitankorek.github.io/shoppingList2.0)
+[check the app here](https://thekapitankorek.github.io/Shopping/)
 
 ## Technologies used
 
