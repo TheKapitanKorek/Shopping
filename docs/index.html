@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shoping list</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    /><link rel="shortcut icon" type="image/jpg" href="./images/favicon.svg"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="app">
+        <div>
+          <h1>Add new product</h1>
+          <div id="input_panel">
+            <form>
+              <div id="double_input">
+                <input
+                  class="input"
+                  id="product_name"
+                  type="text"
+                  placeholder="product name"
+                />
+                <input
+                  class="input"
+                  id="unit"
+                  type="number"
+                  min="0"
+                  max="1000";
+                  placeholder="units/kg"
+                />
+              </div>
+              <div class="switch">
+                <span>Quantity</span>
+                <label class="switch_btn">
+                  <input id="qt_or_weight" type="checkbox" />
+                  <span class="slider"></span>
+                </label>
+                <span>Weight</span>
+              </div>
+              <div id="category_box">
+                <select id="category" name="type">
+                  <option value="vegetables">Vegetables</option>
+                  <option value="fruits">Fruits</option>
+                  <option value="dairy">Dairy</option>
+                  <option value="grain-based">Grain Based</option>
+                  <option value="sweats">Sweats</option>
+                  <option value="hygiene">Hygiene</option>
+                  <option value="electronics">Electronics</option>
+                  <option value="other">Other</option>
+                </select>
+                <div class="btn_container">
+                  <button id="submit"><span>+</span></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <h2>Your shopping list</h2>
+        <div id="main">
+          <div id="product_list">
+            <div class="deco">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div id="header">
+              <span class="product">Product</span>
+              <span class="weight">Weight</span>
+              <span class="quantity">Quantity</span>
+              <span class="category_col">Category</span>
+            </div>
+            <div id="list_content">
+              <div class="category" id="vegetables">
+                <div class="label hidden"><span>vegetables</span></div>
+                <ul class="list"></ul>
+              </div>
+              <div class="category" id="fruits">
+                <div class="label hidden"><span>fruits</span></div>
+                <ul class="list"></ul>
+              </div>
+              <div class="category" id="meat">
+                <div class="label hidden"><span>meat</span></div>
+                <ul class="list"></ul>
+              </div>
+              <div class="category" id="dairy">
+                <div class="label hidden"><span>dairy</span></div>
+                <ul class="list"></ul>
+              </div>
+              <div class="category" id="grain-based">
+                <div class="label hidden"><span>grain-based</span></div>
+                <ul class="list"></ul>
+              </div>
+              <div class="category" id="sweats">
+                <div class="label hidden"><span>sweats</span></div>
+                <ul class="list"></ul>
+              </div>
+              <div class="category" id="hygiene">
+                <div class="label hidden"><span>hygiene</span></div>
+                <ul class="list"></ul>
+              </div>
+              <div class="category" id="electronics">
+                <div class="label hidden"><span>electronics</span></div>
+                <ul class="list"></ul>
+              </div>
+              <div class="category" id="other">
+                <div class="label hidden"><span>other</span></div>
+                <ul class="list"></ul>
+              </div>
+              
+            </div>
+          </div>
+          <div id="side_content">
+            <div id="sums">
+              <div class="sum_row">
+                <span class="side_heading">Total Quantity:</span>
+                <span id="quantity_sum">144</span>
+              </div>
+              <div class="sum_row">
+                <span class="side_heading">Total Weight:</span>
+                <span id="weight_sum">19 kg</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
